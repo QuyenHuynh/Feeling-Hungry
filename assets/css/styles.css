@@ -1,0 +1,212 @@
+/* navbar/intial body */
+body {
+    background-image: url("../images/plaid.png");
+    background-repeat: repeat;
+    height: 100%;
+    line-height: 1.5em;
+    color: #41414c;
+    font-family: 'Open Sans', sans-serif;
+}
+.everything-container{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+a {
+    color:inherit; 
+}
+a:hover {
+    color: blanchedalmond;
+    text-shadow: 0 0 10px #000000;
+}
+.uk-navbar-container {
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: #41414c;    
+    color: #ff3860;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 300;
+    font-size: 20px;
+}
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #41414c; 
+}
+.uk-logo {
+    color: #ff3860;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 300;
+    font-size: 40px;
+}
+.uk-navbar-nav {
+    padding: 10px;
+}
+.sign-up-login{
+    border: 0px solid #ff3860;
+    color:#ff3860;
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 20px;
+}
+.sign-up-login:hover {
+    color: blanchedalmond;
+    text-shadow: 0 0 10px #ff3860;
+}
+.uk-button-large {
+    width: 30%;
+    border-radius: 5px;
+    padding: 0 10px;
+    line-height: 1.5em;
+    height: 53px;
+}
+/* modal */
+.uk-modal-body {
+    border: 5px solid #ff3860;
+    border-radius: 5%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2em;
+}
+h4 {
+    font-family: 'Lobster Two', cursive;
+}
+.form-control { /*also for usersubmit */
+    height: 1.5em;
+    width: 200px;
+}
+#sign-up-button, #login-button, #logout {
+    background-color: rgba(255,56,96, 0.5) !important;
+    background-blend-mode: color;
+}
+.uk-modal-close-default {
+    position: initial;
+}
+/* user choices */
+.title-headers{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 0 0 10px #000000;
+}
+.title-headers:hover {
+    color: blanchedalmond;
+    text-shadow: 0 0 10px #ff3860;
+}
+.submit-button{
+    margin-top: 10px;
+} 
+.allergens-header{
+    background: url("../images/allergen.jpg")center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+ }
+.meats-header{
+    background: url("../images/meats.jpg")center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}
+.veggies-header{
+    background: url("../images/vegetables.jpg")center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75; 
+}
+.carbs-header{
+    background: url("../images/carbs.jpg")center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;  
+}
+.dairy-header{
+    background: url("../images/dairy.jpg")center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}    
+.user-additions-header{
+    background: url("../images/cutlery.jpg")center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;   
+}
+.meat-button-container, .veggie-button-container, .carb-button-container, .dairy-button-container, .allergen-button-containers, .user-button-container {
+    margin-left: 20px;
+}
+.meat-button, .veggie-button, .carb-button, .dairy-button,  .user-button, .allergen-button {
+    background-color: rgba(206,212,218, 0.5) !important;
+    background-blend-mode: color;
+}
+.meat-button:hover, .veggie-button:hover, .carb-button:hover, .dairy-button:hover, .user-button:hover, .allergen-button:hover  {
+    border: 4px solid #ff3860;
+    background-color: rgba(206,212,218, 0.5) !important;
+    background-blend-mode: color;
+}
+.active {
+    border: 4px solid #ced4da;
+    background-color: rgba(255,56,96, 0.5) !important;
+    background-blend-mode: color;
+    font-weight: 200;
+}
+.log{
+    width: 45%;
+    line-height: 1em;
+    padding: 15px;
+}
+.search-bar{
+    width:70%;
+    height: 30px;
+    margin-left:20px;
+}
+.search{
+    background-color: rgba(206,212,218, 0.5) !important;
+    background-blend-mode: color;
+    width: 20%;
+    height: 35px;
+    margin-left:10px;
+}
+.cook{
+    background-color: rgba(255,56,96, 0.5) !important;
+    background-blend-mode: color;
+    width: 12.5%;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+/* recipes */
+.recipes-additions-header{
+    background: url("../images/spices.jpg")center center fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.75;   
+    }
+
+.uk-card {
+    max-width: 300px;
+}
+/* footer */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #666666;
+    color: #8d8d8d;
+    height: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+#recipesHere{
+    margin-left: 40px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
