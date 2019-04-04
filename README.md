@@ -4,7 +4,7 @@ Want to cook but have no idea where to start? This app allows you to select ingr
 
 ## Getting Started
 
-Visit https://quyenhuynh.github.io/feeling-hungry/ to get started on your culinary journey!
+Visit https://quyenhuynh.github.io/Feeling-Hungry/ to get started on your culinary journey!
 
 ![Feeling Hungry?](../master/assets/images/screenshot.jpg)
 
