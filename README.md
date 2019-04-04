@@ -21,8 +21,6 @@ Recipes with the ingredients chosen will populate at the bottom of the page; cli
 
 ![Recipes](../master/assets/images/screenshot2.jpg)
 
-Registering an account with us allows you to save 
-
 ## Built With
 
 * [UIKit](https://getuikit.com/docs/) - The CSS framework used
