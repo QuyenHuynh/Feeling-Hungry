@@ -6,20 +6,20 @@ Want to cook but have no idea where to start? This app allows you to select ingr
 
 Visit https://quyenhuynh.github.io/feeling-hungry/ to get started on your culinary journey!
 
-![Feeling Hungry?](/assets/images/screenshot.JPG)
+![Feeling Hungry?](../master/assets/images/screenshot.jpg)
 
 Make your pick of the available choices or add your own. Click on an active button again to unselect the ingredient.
 To create your own custom option, simply type in any ingredient or dish into the ingredient search textbox, and click "submit".
 
 For those who are highly allergic to certain ingredients such as nuts, milk, wheat, etcetera, we have an "allergens" catergory for you to choose from. This will ensure that the recipes that pull up do not contain these ingredients. 
 
-![User Choices](/assets/images/screenshot1.PNG)
+![User Choices](../master/assets/images/screenshot1.png)
 
 After you've chosen your ingredients, click "Let's Cook" in the bottom right corner.
 
 Recipes with the ingredients chosen will populate at the bottom of the page; clicking them will take you to the recipe's instructions. 
 
-![Recipes](/assets/images/screenshot2.JPG)
+![Recipes](../master/assets/images/screenshot2.jpg)
 
 Registering an account with us allows you to save 
 
