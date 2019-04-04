@@ -5,7 +5,7 @@ var config = {
     projectId: "project-1-3bf2f",
     storageBucket: "project-1-3bf2f.appspot.com",
     messagingSenderId: "769372076886"
-  };
+};
 
 firebase.initializeApp(config);
 
@@ -29,7 +29,7 @@ submit.on('click', function (e) {
 
     console.log("email:" + email, "password: " + password);
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
-        
+
         database.ref().child("users").child(cred.user.uid).set(cred.user.Rb.email);
         id = cred.user.uid;
         console.log(id);
@@ -51,18 +51,12 @@ logout.on("click", function (e) {
 })
 
 database.ref().on("child_added", function (snapshot) {
-    
-    
     snap = snapshot.val()
-
     console.log(snapshot.val())
     if (userLoggedIn) {
-
         ingredientList = snapshot.val().uid;
         console.log(ingredientList);
     }
-
-
 })
 
 const login = $("#login-button")
@@ -81,9 +75,9 @@ login.on("click", function (e) {
         ingredientList = snap[id].ingredients;
         console.log(ingredientList);
 
-        for (var i = 0 ; i < ingredientList.length ; i++) {
+        for (var i = 0; i < ingredientList.length; i++) {
             $("#" + ingredientList[i]).addClass("active");
-            }
+        }
     })
     $("#email-login").val("")
     $("#password-login").val("")
@@ -93,12 +87,8 @@ login.on("click", function (e) {
 auth.onAuthStateChanged(user => {
     if (user) {
         // database.ref().child(id).child("ingredientsListFireBase")
-
         // console.log("user now logged in", user);
-
     } else {
-        
-
         console.log("user now logged out");
     }
 })

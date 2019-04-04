@@ -1,9 +1,10 @@
+//on-click function for our ingredient buttons
 $(document.body).on("click", ".food-button", function () {
     $(this).toggleClass('active');
     var ingredient = $(this).attr("data-food");
     var ingrIndex = ingredientList.indexOf(ingredient);
     if (ingredientList.indexOf(ingredient) >= 0) {
-        ingredientList.splice(ingrIndex, 1); 
+        ingredientList.splice(ingrIndex, 1);
         if (userLoggedIn) {
             database.ref().child("users").child(id).set({
                 ingredients: ingredientList,
@@ -14,17 +15,17 @@ $(document.body).on("click", ".food-button", function () {
         ingredientList.push(ingredient);
         if (userLoggedIn) {
             database.ref().child("users").child(id).set({
-                    ingredients: ingredientList,
-                    allergens: allergenList
-                })
+                ingredients: ingredientList,
+                allergens: allergenList
+            })
         }
     }
-    // child("'" + id + "'")
     console.log("Ingredient List: " + ingredientList)
-    //if we want to generate recipes dynamically
+    //uncomment to display recipes dynamically for each ingredient
     //displayRecipes();
 });
 
+//on-click function for our allergen buttons
 $(".allergen-button").on("click", function () {
     $(this).toggleClass('active');
     var allergen = $(this).attr("data-food");
@@ -32,19 +33,19 @@ $(".allergen-button").on("click", function () {
     if (allergenList.indexOf(allergen) >= 0) {
         allergenList.splice(allergenIndex, 1);
         if (userLoggedIn) {
-        database.ref().child("users").child(id).set({
-            ingredients: ingredientList,
-            allergens: allergenList
-        })
-    }
+            database.ref().child("users").child(id).set({
+                ingredients: ingredientList,
+                allergens: allergenList
+            })
+        }
     } else {
         allergenList.push(allergen);
         if (userLoggedIn) {
-        database.ref().child("users").child(id).set({
-            ingredients: ingredientList,
-            allergens: allergenList
-        })
-    }
+            database.ref().child("users").child(id).set({
+                ingredients: ingredientList,
+                allergens: allergenList
+            })
+        }
     }
     console.log("Allergen list: " + allergenList);
 });
